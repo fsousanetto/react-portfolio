@@ -1,0 +1,154 @@
+.grid--container {
+  margin-top: 7.5rem;
+  margin-bottom: 10rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 2rem;
+}
+
+.grid--left {
+  min-width: 300px;
+  margin: 0 1.2rem;
+}
+
+.grid--right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.home--title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.home--text {
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.home--text:last-child {
+  margin-bottom: 2rem;
+}
+
+.home--avatar {
+  width: 75%;
+}
+
+.texts--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+#bars {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  margin: 1.2rem 0;
+  padding: 1rem 0;
+}
+
+.bars {
+  display: flex;
+  margin: -0.2rem 0;
+
+  max-width: 330px;
+  height: 100%;
+}
+
+.bar {
+  margin-right: .7rem;
+  margin-left: 0;
+}
+
+.bar--long {
+  margin-right: .5rem;
+}
+
+.bar--medium {
+  margin-right: .5rem;
+}
+
+.bar--small {
+  margin-right: .5rem;
+}
+
+.bar--dot {
+  margin-right: .5rem;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.bar {
+  animation: slideIn 1s ease-out;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .grid--right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .home--avatar {
+    width: 55%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+
+  .grid--right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    width: 100%;
+  }
+
+  .home--avatar {
+    width: 100%;
+  }
+
+  .texts--container {
+    width: 62%;
+  }
+}

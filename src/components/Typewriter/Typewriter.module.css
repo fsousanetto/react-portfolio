@@ -1,0 +1,17 @@
+.blinking-cursor {
+  font-weight: bold;
+  color: #008000;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+
+  from,
+  to {
+    color: transparent
+  }
+
+  50% {
+    color: inherit;
+  }
+}

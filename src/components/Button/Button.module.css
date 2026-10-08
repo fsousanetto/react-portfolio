@@ -1,0 +1,17 @@
+.button {
+  background-color: transparent;
+  width: calc(25% - 0.3125rem);
+  color: #6f6c6c;
+  border: #4cae4c 0.0625rem solid;
+  margin-bottom: 2.5rem;
+  padding: 0.5rem;
+  border-bottom: green 0.5rem solid;
+  border-radius: 0.4375rem;
+  border-bottom-width: 0.25rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #014e01;
+  color: var(--text);
+}
